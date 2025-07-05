@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { QuizContext } from "../context/QuizContext"; // Corrected import: named import with curly braces
+import { QuizContext } from "../context/QuizContext"; 
 
 export default function Question() {
   const { currentQ, setScore, score, nextQuestion } = useContext(QuizContext);
