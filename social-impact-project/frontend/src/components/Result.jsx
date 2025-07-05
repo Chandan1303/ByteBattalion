@@ -21,7 +21,7 @@ export default function Result() {
     <div className="result-container">
       <h2>🎉 Quiz Complete! 🎉</h2>
       <p>
-        You scored **{score}** out of **{questions.length}** (**{percentage.toFixed(0)}%**)
+        You scored {score} out of {questions.length} ({percentage.toFixed(0)}%)
       </p>
       <p className="result-message">{getMessage()}</p>
       <button onClick={resetQuiz}>Play Again</button>
