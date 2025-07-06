@@ -1,142 +1,149 @@
+.timer-display{
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #e74c3c;
+  margin-bottom: 20px;
+  background: #fdf3f2;
+  padding: 8px 15px;
+  border-radius: 8px;
+  border: 1px solid #e74c3c;
+  display: inline-block;
+  box-shadow: 0 2px 5px rgba(0 , 0 , 0, 0.1);
+}
+
+.options-container button:disabled{
+  background: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
 .app-container{
-  text-align :center;
+  text-align: center;
   padding: 20px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align_items: center;
+  align-items: center;
   justify-content: center;
-  background: linear-gradient(to right , #6a11cb 0% , #2575fc 100%);
+  background: linear-gradient(to right , #6a11cb 0% ,#2575fc 100%);
+ box-sizing: border-box;
 }
+.title{
+  color: #fff;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  text-overflow: 2px 2px 4px rgba(0,0,0,0.3);
 
-.title {
-  color:#fff;
-  font-size:2.5rem;
-  margin-bottom:30px;
-  text-shadow:2px 2px 4px rgba(0,0,0,0.3);
 }
-
-@media(max-width:600px) {
+@media(max-width:600px){
   .title{
     font-size: 1.8em;
-    margin-bottom:0px;
+    margin-bottom: 20px;
   }
 }
 
-.quiz-container, 
+.quiz-container,
 .result-container,
-.tips-section {
-  background: rgba(255,255,255,0.95);
+.tips-section{
+  background-color: rgba(255,255,255,0.95);
   margin:20px auto;
-  padding:30px;
-  border-radius:15px;
+  padding: 30px;
+  border-radius: 15px;
   box-shadow: 0 8px 30px rgba(0,0,0,0.2);
-  max-width:600px;
+  max-width: 600px;
   width:90%;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
-.question-card h2 {
+.question-card h2{
   color: #333;
-  margin_bottom: 25px;
+  margin-bottom: 25px;
   font-size: 1.8em;
 }
 
-.options-container {
-  display:flex;
-  flex-wrap:wrap;
+.options-container{
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap:15px;
 }
-
-
-.options-container button {
-  padding:14px 28px ;
+.options-container button{
+  padding: 14px 28px;
   border: none;
   background: #4CAF50;
-  color:white;
+  color: white;
   cursor: pointer;
-  border-radius:8px;
-  transition: background 0.3s ease, transform 0.2s ease ;
-  font-size:1.1em;
-  min-width:150px;
-  flex:1 1 auto;
-  max-width :45%;
-  bax-sizing:border-box;
+  border-radius: 8px;
+  transition: background 0.3s ease , transform 0.2s ease;
+  font-size: 1.1em;
+  min-width: 150px;
+  flex: 1 1 auto;
+  max-width: 45%;
+  box-sizing: border-box;
 }
-@media (max-width: 480px) {
-  .options-container button {
+@media (max-width:480px) {
+  .options-container button{
     max-width: 100%;
   }
+  
 }
 
-.options-container button:hover {
+.options-container button:hover:not(:disabled){
   background: #45a049;
-  transform: translateY(-3px);
+  transform:translateY(-3px);
 }
 
-.result-container button {
-  margin: 15px 10px;
-  padding: 12px 25px;
+.result-container button{
+  margin:15px 10px;
+  padding:12px 25px;
   background: #007bff;
   color: white;
-  border: none;
+  border:none;
   border-radius: 8px;
   cursor: pointer;
   font-size: 1.1em;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: background 0.3s ease , transform 0.2s ease;
 }
-
-.result-container button:hover {
-  background: #0056b3;
+.result-container button:hover{
+  background:#0056b3;
   transform: translateY(-3px);
 }
-
-.result-message {
+.result-message{
   font-size: 1.3em;
   color: #555;
   margin-top: 20px;
   font-weight: bold;
 }
-
-.tips-section {
+.tips-section{
   background: #fff3e0;
   padding: 20px;
   margin: 20px auto;
   border-radius: 10px;
   max-width: 600px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0 , 0 , 0, 0.1);
   box-sizing: border-box;
 }
 
-.tips-section h3 {
-  color: #ff9800;
+.tips-section h3{
+  color:#ff9800;
   margin-bottom: 15px;
 }
-
-.tips-section ul {
+.tips-section ul{
   list-style: none;
   padding: 0;
   text-align: left;
 }
-
 .tips-section li {
-  margin: 10px 0;
+  margin:10px 0;
   color: #555;
   font-size: 1.1em;
   position: relative;
-  padding-left: 25px;
+  padding-left:25px ;
 }
 
-.tips-section li::before {
+.tips-section li::before{
   content: '👉';
   position: absolute;
   left: 0;
   color: #ff9800;
 }
-
-
-
-  
-    
-
